@@ -1,0 +1,23 @@
+body,
+html {
+    background-position-x: initial;
+}
+
+#top {
+    .inner {
+        height   : auto;
+        top      : 50%;
+        transform: translateY(-50%);
+        position : relative;
+
+        .content {
+            top      : initial;
+            transform: initial;
+            position : initial;
+
+            p {
+                padding: 1.5em;
+            }
+        }
+    }
+}
