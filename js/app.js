@@ -27133,7 +27133,6 @@ var app = {
 		$(window).scroll(_this.onScroll.bind(_this));
 		$(window).resize(_this.onResize.bind(_this));
 		$(window).load(_this.onLoad.bind(_this));
-		_this.ajaxScripts();
 	},
 
 	onReady: function () {
@@ -27173,22 +27172,6 @@ var app = {
 		ga('create', 'UA-74948704-1', 'auto');
 		ga('send', 'pageview');
 
-
-		//hotjar
-		(function (h, o, t, j, a, r) {
-			h.hj = h.hj || function () {
-				(h.hj.q = h.hj.q || []).push(arguments)
-			};
-			h._hjSettings = {
-				hjid: 229696,
-				hjsv: 5
-			};
-			a = o.getElementsByTagName('head')[0];
-			r = o.createElement('script');
-			r.async = 1;
-			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-			a.appendChild(r);
-		})(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
 	}
 };
 
