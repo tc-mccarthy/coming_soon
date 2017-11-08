@@ -1,17 +1,10 @@
 /*
 	All the styles for my project
 */
-@import "compass/css3";
-@import url( 'https://fonts.googleapis.com/css?family=Roboto');
 @import "_normalize";
+@import "bootstrap/bootstrap";
 @import "_vars";
 @import "_mixins";
-@import "_layout";
+@import "_buttons";
+@import "_ads";
 @import "_base";
-@import "_mobile";
-@media (min-width:$mobileBP) {
-	 @import"_tablet";
-}
-@media (min-width:$desktopBP) {
-	 @import"_desktop";
-}
